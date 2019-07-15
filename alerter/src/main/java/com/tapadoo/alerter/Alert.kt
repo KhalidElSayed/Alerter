@@ -257,6 +257,24 @@ class Alert @JvmOverloads constructor(context: Context, attrs: AttributeSet? = n
     /* Setters and Getters */
 
     /**
+     * Sets the Gravity of the title of the Alert
+     *
+     * @param contentGravity Gravity of the title of the Alert
+     */
+    fun setTitleGravity(gravity: Int) {
+        tvTitle?.gravity = gravity
+    }
+
+    /**
+     * Sets the Gravity of the text of the Alert
+     *
+     * @param contentGravity Gravity of the text of the Alert
+     */
+    fun setTextGravity(gravity: Int) {
+        tvText?.gravity = gravity
+    }
+
+    /**
      * Sets the Alert Background colour
      *
      * @param color The qualified colour integer

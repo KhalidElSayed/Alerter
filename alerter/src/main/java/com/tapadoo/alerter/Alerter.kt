@@ -124,6 +124,30 @@ class Alerter private constructor() {
     }
 
     /**
+     * Set Gravity of the text
+     *
+     * @param gravity Gravity of Alert
+     * @return This Alerter
+     */
+    fun setTitleGravity(gravity: Int): Alerter {
+        alert?.setTitleGravity(gravity)
+
+        return this
+    }
+
+    /**
+     * Set Gravity of the text
+     *
+     * @param gravity Gravity of Alert
+     * @return This Alerter
+     */
+    fun setTextGravity(gravity: Int): Alerter {
+        alert?.setTextGravity(gravity)
+
+        return this
+    }
+
+    /**
      * Sets the Alert Text
      *
      * @param textId Text String Resource

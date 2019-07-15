@@ -12,10 +12,10 @@ apply plugin: 'org.jetbrains.dokka'
 //Quality Standards
 apply from: rootProject.file('quality.gradle')
 
-final String GROUP_ID = "com.tapadoo.android"
+final String GROUP_ID = "com.github.khalidelsayed"
 final String VERSION = "4.0.3"
 final String DESCRIPTION = "An Android Alerting Library"
-final String GITHUB_URL = "https://github.com/Tapadoo/Alerter"
+final String GITHUB_URL = "https://github.com/KhalidElSayed/Alerter"
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion

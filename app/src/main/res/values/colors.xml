@@ -3,4 +3,6 @@
     <color name="colorPrimary">#63C9D7</color>
     <color name="colorPrimaryDark">#2c9cac</color>
     <color name="colorAccent">#F99143</color>
+
+    <color name="tomato">#e74c3c</color>
 </resources>

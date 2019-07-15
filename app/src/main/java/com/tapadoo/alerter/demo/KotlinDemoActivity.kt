@@ -2,6 +2,7 @@ package com.tapadoo.alerter.demo
 
 import android.graphics.Typeface
 import android.os.Bundle
+import android.view.Gravity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.View
@@ -32,8 +33,12 @@ class KotlinDemoActivity : AppCompatActivity() {
 
     private fun showAlertDefault() {
         Alerter.create(this@KotlinDemoActivity)
-                .setTitle(R.string.title_activity_example)
-                .setText("Alert text...")
+//                .setTitle(R.string.title_activity_example)
+                .setText("No internet connection. Please connect to the internet and try again")
+                .setTextGravity(Gravity.CENTER_HORIZONTAL)
+                .setBackgroundColorRes(R.color.tomato)
+                .showIcon(false)
+                .setDuration(4000)
                 .show()
     }
 
